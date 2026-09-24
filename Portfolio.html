@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script>window["__codeletBootstrap__"] = JSON.parse('{"A":"A","B":"20260924-05-f84ad47","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script>
+  <script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js"
+    integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VK — Software Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #090d14;
+      --panel: #111824;
+      --panel-2: #151f2d;
+      --line: rgba(164, 190, 216, .17);
+      --paper: #edf4f7;
+      --muted: #9babb9;
+      --cyan: #38d9ff;
+      --cyan-soft: rgba(56, 217, 255, .13);
+      --violet: #a78bfa;
+      --shadow: 0 18px 70px rgba(0, 0, 0, .26);
+    }
+
+    body.light {
+      --ink: #f2f7fa;
+      --panel: #ffffff;
+      --panel-2: #eaf1f5;
+      --line: rgba(28, 52, 72, .17);
+      --paper: #0c1721;
+      --muted: #526576;
+      --cyan-soft: rgba(8, 145, 178, .11);
+      --shadow: 0 18px 70px rgba(25, 53, 74, .13);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      width: 100%;
+      color: var(--paper);
+      background: var(--ink);
+      font-family: "Fira Sans", sans-serif;
+      transition: background .35s, color .35s;
+    }
+
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 42px 42px;
+      background-position: center top;
+    }
+
+    .grid-fade {
+      background: linear-gradient(180deg, rgba(9, 13, 20, .05), var(--ink) 86%);
+    }
+
+    .light .grid-fade {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .1), var(--ink) 86%);
+    }
+
+    .shell-width {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .nav-glass {
+      background: color-mix(in srgb, var(--ink) 87%, transparent);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mono {
+      font-family: "Space Mono", monospace;
+    }
+
+    .panel {
+      background: color-mix(in srgb, var(--panel) 94%, transparent);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .section-kicker {
+      color: var(--cyan);
+      font-family: "Space Mono", monospace;
+      font-size: .72rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+      font-weight: 700;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .nav-link {
+      color: var(--muted);
+      transition: color .2s;
+      font-size: .87rem;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--cyan);
+    }
+
+    .focus-ring:focus-visible,
+    button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 4px;
+      border-radius: 5px;
+    }
+
+    .accent-button {
+      background: var(--cyan);
+      color: #061016;
+      box-shadow: 0 0 26px rgba(56, 217, 255, .22);
+    }
+
+    .accent-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 32px rgba(56, 217, 255, .35);
+    }
+
+    .quiet-button {
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel) 74%, transparent);
+      color: var(--paper);
+    }
+
+    .quiet-button:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .terminal {
+      background: #0a1018;
+      border: 1px solid rgba(129, 167, 196, .25);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .4), inset 0 1px rgba(255, 255, 255, .04);
+    }
+
+    .light .terminal {
+      background: #10202b;
+    }
+
+    .terminal-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 1.1em;
+      vertical-align: -.2em;
+      background: var(--cyan);
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel-2) 87%, transparent);
+      border-radius: 999px;
+      padding: .38rem .65rem;
+      color: var(--paper);
+      font-size: .81rem;
+    }
+
+    .card-lift {
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .card-lift:hover,
+    .card-lift:focus-within {
+      transform: translateY(-5px);
+      border-color: color-mix(in srgb, var(--cyan) 55%, var(--line));
+      box-shadow: 0 22px 55px rgba(0, 0, 0, .23);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .dash-chart {
+      background: linear-gradient(180deg, rgba(56, 217, 255, .16), transparent);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dash-chart svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .flow-line {
+      height: 1px;
+      flex: 1;
+      min-width: 22px;
+      background: linear-gradient(90deg, var(--cyan), var(--violet));
+      opacity: .7;
+    }
+
+    .details {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .28s ease;
+    }
+
+    .details>div {
+      overflow: hidden;
+    }
+
+    .project.open .details {
+      grid-template-rows: 1fr;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+
+    @media (max-width: 860px) {
+
+      .desktop-nav,
+      .desktop-connect {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .mobile-nav.open {
+        display: flex;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .experience-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    @media (min-width: 861px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript"
+    integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/c90249f316bbe621.editing_sdk.js" type="text/javascript"
+    integrity="sha512-cd4ICwG+3hl1AqLrCysr9GopLZ+2Cyjo2KMofj11Ys31LqLmkNEJhOQqYCwg6Nakgg+jlZ2JIdhM6PxWUR0zsg=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript"
+    integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+</head>
+
+<body data-template-id="__page-root" style="background: rgb(9, 13, 20);">
+  <div class="app-shell grid-fade">
+    <header class="sticky top-0 z-50 nav-glass">
+      <nav class="shell-width h-[72px] flex items-center justify-between gap-4" aria-label="Primary navigation"><a
+          href="#top" class="flex items-center gap-3 no-underline focus-ring"> <span
+            class="w-8 h-8 rounded border border-cyan-300/40 text-cyan-300 flex items-center justify-center mono text-xs">&gt;_</span>
+          <span data-template-id="nav-logo" class="canva-text mono text-sm font-bold tracking-tight"
+            style="color: rgb(237, 244, 247); font-family: &quot;Space Mono&quot;; font-weight: 700;">VK / SOFTWARE
+            DEVELOPER</span> </a>
+        <div class="desktop-nav flex items-center gap-5"><a href="#about" class="nav-link focus-ring"><span
+              data-template-id="nav-about" class="canva-link" style="color: rgb(155, 171, 185);">About</span></a> <a
+            href="#stack" class="nav-link focus-ring"><span data-template-id="nav-stack" class="canva-link"
+              style="color: rgb(155, 171, 185);">Stack</span></a> <a href="#projects" class="nav-link focus-ring"><span
+              data-template-id="nav-projects" class="canva-link" style="color: rgb(155, 171, 185);">Projects</span></a>
+          <a href="#workflow" class="nav-link focus-ring"><span data-template-id="nav-workflow" class="canva-link"
+              style="color: rgb(155, 171, 185);">AI Workflow</span></a> <a href="#experience"
+            class="nav-link focus-ring"><span data-template-id="nav-experience" class="canva-link"
+              style="color: rgb(155, 171, 185);">Experience</span></a> <a href="#contact"
+            class="nav-link focus-ring"><span data-template-id="nav-contact" class="canva-link"
+              style="color: rgb(155, 171, 185);">Contact</span></a>
+        </div>
+        <div class="flex items-center gap-2">
+          <!-- <button id="theme-toggle" type="button"
+            class="quiet-button focus-ring w-9 h-9 rounded-lg inline-flex items-center justify-center"
+            aria-label="Toggle color theme"> <i data-lucide="sun" width="16" height="16"></i>
+           </button> -->
+          <a href="#contact" data-template-id="nav-connect"
+            class="canva-button desktop-connect accent-button focus-ring rounded-lg px-4 py-2 text-sm font-semibold no-underline"
+            style="background: rgb(56, 217, 255); color: rgb(6, 16, 22); font-weight: 700;">Let’s connect</a> <button
+            id="menu-toggle" type="button"
+            class="menu-toggle quiet-button focus-ring w-9 h-9 rounded-lg items-center justify-center"
+            aria-label="Open navigation menu" aria-expanded="false"> <i data-lucide="menu" width="18" height="18"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-nav" class="mobile-nav shell-width pb-5 flex-col gap-3" aria-label="Mobile navigation"><a
+          href="#about" class="nav-link"><span data-template-id="mobile-about" class="canva-link"
+            style="color: rgb(155, 171, 185);">About</span></a> <a href="#stack" class="nav-link"><span
+            data-template-id="mobile-stack" class="canva-link" style="color: rgb(155, 171, 185);">Stack</span></a> <a
+          href="#projects" class="nav-link"><span data-template-id="mobile-projects" class="canva-link"
+            style="color: rgb(155, 171, 185);">Projects</span></a> <a href="#workflow" class="nav-link"><span
+            data-template-id="mobile-workflow" class="canva-link" style="color: rgb(155, 171, 185);">AI
+            Workflow</span></a> <a href="#experience" class="nav-link"><span data-template-id="mobile-experience"
+            class="canva-link" style="color: rgb(155, 171, 185);">Experience</span></a> <a href="#contact"
+          class="nav-link"><span data-template-id="mobile-contact" class="canva-link"
+            style="color: rgb(155, 171, 185);">Contact</span></a>
+      </div>
+    </header>
+    <main id="top">
+      <section class="shell-width py-20 md:py-28">
+        <div class="hero-grid grid grid-cols-2 gap-12 items-center">
+          <div class="reveal">
+            <div data-template-id="hero-badge"
+              class="canva-tag inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1.5 mono text-xs text-cyan-200"
+              style="background: rgba(56, 217, 255, 0.13); color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">
+              ● Open to Software Development Opportunities</div>
+            <h1 data-template-id="hero-title"
+              class="canva-text mt-6 max-w-3xl text-[clamp(2.9rem,6vw,5.7rem)] leading-[.97] tracking-[-.055em] font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Software Developer building practical web products
+              with code + AI</h1>
+            <p data-template-id="hero-copy" class="canva-text muted mt-7 max-w-xl text-lg leading-relaxed"
+              style="color: rgb(155, 171, 185); font-size: 18px;">I, Velagandula Koushik is a full-stack developer
+              focused
+              on practical software, automation, thoughtful debugging, and AI-assisted development.</p>
+            <div class="mt-8 flex flex-wrap gap-3"><a href="#projects" data-template-id="hero-primary"
+                class="canva-button accent-button focus-ring inline-flex items-center gap-2 rounded-lg px-5 py-3 font-semibold no-underline"
+                style="background: rgb(56, 217, 255); color: rgb(6, 16, 22); font-weight: 700;">View Projects</a>
+              <button id="github-placeholder" data-template-id="hero-github" type="button"
+                class="canva-button quiet-button focus-ring inline-flex items-center gap-2 rounded-lg px-5 py-3 font-semibold"
+                style="background: rgb(17, 24, 36); color: rgb(237, 244, 247); font-weight: 600;">GitHub</button>
+            </div>
+            <a href="https://github.com/VKKumar2002" target="_blank">
+              <p id="placeholder-message" class="mt-4 text-sm muted" aria-live="polite"></p>
+            </a>
+          </div>
+          <div class="terminal reveal rounded-2xl overflow-hidden" style="transition-delay:.12s">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+              <div class="flex gap-2">
+                <span class="terminal-dot bg-red-400"></span><span class="terminal-dot bg-amber-300"></span><span
+                  class="terminal-dot bg-cyan-300"></span>
+              </div><span data-template-id="terminal-file" class="canva-text mono text-xs text-slate-400"
+                style="color: rgb(155, 171, 185); font-family: &quot;Space Mono&quot;;">practical-software.ts</span>
+            </div>
+            <div class="p-6 md:p-8 mono text-sm leading-8">
+              <p><span class="text-violet-300">01</span> <span data-template-id="terminal-line-1"
+                  class="canva-text text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">const idea =
+                  practicalSoftware();</span></p>
+              <p><span class="text-violet-300">02</span> <span data-template-id="terminal-line-2"
+                  class="canva-text text-slate-100"
+                  style="color: rgb(237, 244, 247); font-family: &quot;Space Mono&quot;;">build({ code, automation,
+                  aiAssist });</span></p>
+              <p><span class="text-violet-300">03</span> <span data-template-id="terminal-line-3"
+                  class="canva-text text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">ship();</span><span
+                  class="cursor"></span></p>
+              <div class="mt-9 pt-5 border-t border-white/10 flex flex-wrap gap-2"><span
+                  data-template-id="terminal-label-1"
+                  class="canva-tag border border-cyan-300/25 text-cyan-200 px-2 py-1 rounded text-[10px]"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">FULL-STACK</span> <span
+                  data-template-id="terminal-label-2"
+                  class="canva-tag border border-violet-300/25 text-violet-200 px-2 py-1 rounded text-[10px]"
+                  style="color: rgb(221, 214, 254); font-family: &quot;Space Mono&quot;;">AUTOMATION</span> <span
+                  data-template-id="terminal-label-3"
+                  class="canva-tag border border-cyan-300/25 text-cyan-200 px-2 py-1 rounded text-[10px]"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">AI-ASSISTED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="shell-width py-20 scroll-mt-20">
+        <div class="grid md:grid-cols-[1.25fr_.75fr] gap-8 items-start">
+          <div class="reveal">
+            <p data-template-id="about-kicker" class="canva-text section-kicker"
+              style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">01 / ABOUT</p>
+            <h2 data-template-id="about-title" class="canva-text section-title mt-4 max-w-2xl"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Versatile across the stack. Grounded in the work.
+            </h2>
+            <p data-template-id="about-copy" class="canva-text muted mt-6 max-w-2xl text-lg leading-relaxed"
+              style="color: rgb(155, 171, 185); font-size: 18px;">I work across backend and frontend development to turn
+              requirements into clear, usable software. My approach combines implementation with automation, debugging,
+              refactoring, and steady iteration—keeping the product practical at every stage.</p>
+          </div>
+          <aside data-template-id="principles-card" class="canva-card panel reveal rounded-2xl p-6"
+            style="transition-delay: 0.1s; background: rgb(17, 24, 36);">
+            <p data-template-id="principles-label" class="canva-text mono text-xs text-cyan-200 tracking-widest"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">WORKING
+              PRINCIPLES</p>
+            <ul class="mt-5 space-y-4">
+              <li class="flex gap-3"><i data-lucide="corner-down-right" class="text-cyan-300 w-4"></i><span
+                  data-template-id="principle-1" class="canva-text"
+                  style="color: rgb(237, 244, 247); font-weight: 600;">Clarity before complexity</span></li>
+              <li class="flex gap-3"><i data-lucide="corner-down-right" class="text-cyan-300 w-4"></i><span
+                  data-template-id="principle-2" class="canva-text"
+                  style="color: rgb(237, 244, 247); font-weight: 600;">Automate the repeatable</span></li>
+              <li class="flex gap-3"><i data-lucide="corner-down-right" class="text-cyan-300 w-4"></i><span
+                  data-template-id="principle-3" class="canva-text"
+                  style="color: rgb(237, 244, 247); font-weight: 600;">Build, test, refine</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+      <section id="stack" class="shell-width py-20 scroll-mt-20">
+        <div class="reveal">
+          <p data-template-id="stack-kicker" class="canva-text section-kicker"
+            style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">02 / TECH STACK</p>
+          <h2 data-template-id="stack-title" class="canva-text section-title mt-4"
+            style="color: rgb(237, 244, 247); font-weight: 700;">Tools for building end-to-end.</h2>
+        </div>
+        <div class="mt-10 grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <article data-template-id="stack-languages" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="languages-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">LANGUAGES</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="lang-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Java</span><span
+                data-template-id="lang-2" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Python</span><span
+                data-template-id="lang-3" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">JavaScript</span><span
+                data-template-id="lang-4" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">TypeScript</span>
+            </div>
+          </article>
+          <article data-template-id="stack-frontend" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="frontend-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">FRONTEND</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="front-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">React</span><span
+                data-template-id="front-2" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Next.js</span><span
+                data-template-id="front-3" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Tailwind CSS</span>
+            </div>
+          </article>
+          <article data-template-id="stack-backend" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="backend-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">BACKEND</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="back-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Spring MVC</span><span
+                data-template-id="back-2" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Spring Data JPA</span><span
+                data-template-id="back-3" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Hibernate</span><span
+                data-template-id="back-4" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Django</span><span
+                data-template-id="back-5" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">REST APIs</span>
+            </div>
+          </article>
+          <article data-template-id="stack-data" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="data-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">DATABASES</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="data-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">SQL</span><span
+                data-template-id="data-2" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">MySQL</span>
+            </div>
+          </article>
+          <article data-template-id="stack-testing" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="testing-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">TESTING &amp;
+              AUTOMATION</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="test-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Selenium</span><span
+                data-template-id="test-2" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Postman</span><span
+                data-template-id="test-3" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">JUnit</span><span
+                data-template-id="test-4" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Requests</span><span
+                data-template-id="test-5" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">BeautifulSoup</span><span
+                data-template-id="test-6" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">PIL · PDF automation</span>
+            </div>
+          </article>
+          <article data-template-id="stack-ai" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="ai-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">AI</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="ai-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Generative AI</span><span
+                data-template-id="ai-2" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Prompt Engineering</span><span
+                data-template-id="ai-3" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">AI-assisted coding</span>
+            </div>
+          </article>
+          <article data-template-id="stack-devops" class="canva-card panel rounded-xl p-5 reveal"
+            style="background: rgb(17, 24, 36);">
+            <h3 data-template-id="devops-title" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">DEVOPS</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span data-template-id="ops-1" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">Git</span><span data-template-id="ops-2"
+                class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">GitHub</span><span
+                data-template-id="ops-3" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">GitHub Actions</span><span
+                data-template-id="ops-4" class="canva-tag chip"
+                style="background: rgb(21, 31, 45); color: rgb(237, 244, 247);">CI/CD</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="projects" class="shell-width py-20 scroll-mt-20">
+        <div class="reveal">
+          <p data-template-id="projects-kicker" class="canva-text section-kicker"
+            style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">03 / FEATURED PROJECTS</p>
+          <h2 data-template-id="projects-title" class="canva-text section-title mt-4"
+            style="color: rgb(237, 244, 247); font-weight: 700;">Projects built around useful outcomes.</h2>
+          <p data-template-id="projects-copy" class="canva-text muted mt-4 max-w-2xl"
+            style="color: rgb(155, 171, 185);">Selected work spanning dashboard interfaces, backend systems, automation,
+            and computer vision.</p>
+        </div>
+        <article data-template-id="project-featured"
+          class="canva-card panel card-lift project reveal mt-10 rounded-2xl overflow-hidden"
+          style="background: rgb(17, 24, 36);">
+          <div class="grid lg:grid-cols-[1.05fr_.95fr]">
+            <div class="p-7 md:p-9">
+              <p data-template-id="featured-index" class="canva-text mono text-xs text-cyan-200"
+                style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">01 / FEATURED BUILD</p>
+              <h3 data-template-id="featured-title" class="canva-text mt-3 text-3xl font-bold tracking-tight"
+                style="color: rgb(237, 244, 247); font-weight: 700;">Energy Operations Analytics Dashboard</h3>
+              <p data-template-id="featured-stack" class="canva-text mt-4 text-sm text-violet-200 leading-relaxed"
+                style="color: rgb(221, 214, 254);">Next.js · React · TypeScript · Tailwind CSS · Recharts · TanStack
+                React Table · shadcn/Radix UI · dnd-kit · Framer Motion · GitHub Actions</p>
+              <div class="mt-7 grid gap-4">
+                <div>
+                  <p data-template-id="featured-problem-label" class="canva-text mono text-xs text-cyan-200"
+                    style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">PROBLEM</p>
+                  <p data-template-id="featured-problem" class="canva-text muted mt-1"
+                    style="color: rgb(155, 171, 185);">Turning operational data into a practical, usable interface.</p>
+                </div>
+                <div>
+                  <p data-template-id="featured-solution-label" class="canva-text mono text-xs text-cyan-200"
+                    style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">SOLUTION</p>
+                  <p data-template-id="featured-solution" class="canva-text muted mt-1"
+                    style="color: rgb(155, 171, 185);">Responsive admin analytics dashboard with KPI cards, charts,
+                    advanced tables, theme support, reusable UI, static export, and GitHub Pages deployment.</p>
+                </div>
+                <div>
+                  <p data-template-id="featured-impact-label" class="canva-text mono text-xs text-cyan-200"
+                    style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">IMPACT</p>
+                  <p data-template-id="featured-impact" class="canva-text muted mt-1"
+                    style="color: rgb(155, 171, 185);">A clearer way to explore operational information through
+                    organized, responsive interface patterns.</p>
+                </div>
+              </div>
+              <div class="mt-7 flex flex-wrap gap-3"><button
+                  onclick="window.open('https://github.com/VKKumar2002/Dashboard')" data-template-id="featured-github"
+                  type="button" class="canva-button quiet-button focus-ring rounded-lg px-4 py-2 text-sm"
+                  style="background: rgb(21, 31, 45); color: rgb(237, 244, 247); font-weight: 600;">GitHub</button>
+                <button data-template-id="featured-details" type="button"
+                  class="canva-button accent-button focus-ring toggle-details rounded-lg px-4 py-2 text-sm"
+                  style="background: rgb(56, 217, 255); color: rgb(6, 16, 22); font-weight: 700;">View details</button>
+              </div>
+              <div class="details">
+                <div>
+                  <p data-template-id="featured-ai-detail"
+                    class="canva-text mt-6 pt-5 border-t border-white/10 muted leading-relaxed"
+                    style="color: rgb(155, 171, 185);">AI-assisted development: Generative AI and prompt engineering
+                    were used for component development, code generation, debugging, refactoring, UI implementation, and
+                    iterative feature development.</p>
+                </div>
+              </div>
+            </div>
+            <div data-template-id="dashboard-preview"
+              class="canva-panel bg-[#0b131e] p-5 md:p-7 border-l border-white/10" style="background: rgb(11, 19, 30);">
+              <div class="flex justify-between items-center">
+                <span data-template-id="preview-title" class="canva-text mono text-xs text-slate-300"
+                  style="color: rgb(203, 213, 225); font-family: &quot;Space Mono&quot;;">ILLUSTRATIVE DASHBOARD
+                  PREVIEW</span><span data-template-id="preview-note"
+                  class="canva-tag text-[10px] text-cyan-200 border border-cyan-300/30 px-2 py-1 rounded"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">SAMPLE UI</span>
+              </div>
+              <div class="grid grid-cols-3 gap-3 mt-5">
+                <div data-template-id="preview-kpi-1"
+                  class="canva-card rounded-lg border border-white/10 bg-white/5 p-3"
+                  style="background: rgb(21, 31, 45);">
+                  <span data-template-id="preview-kpi-1-label" class="canva-text text-[10px] text-slate-400"
+                    style="color: rgb(148, 163, 184);">KPI Card</span>
+                  <p data-template-id="preview-kpi-1-value" class="canva-text mt-2 text-sm text-cyan-200"
+                    style="color: rgb(182, 241, 255);">Overview</p>
+                </div>
+                <div data-template-id="preview-kpi-2"
+                  class="canva-card rounded-lg border border-white/10 bg-white/5 p-3"
+                  style="background: rgb(21, 31, 45);">
+                  <span data-template-id="preview-kpi-2-label" class="canva-text text-[10px] text-slate-400"
+                    style="color: rgb(148, 163, 184);">KPI Card</span>
+                  <p data-template-id="preview-kpi-2-value" class="canva-text mt-2 text-sm text-cyan-200"
+                    style="color: rgb(182, 241, 255);">Trend</p>
+                </div>
+                <div data-template-id="preview-kpi-3"
+                  class="canva-card rounded-lg border border-white/10 bg-white/5 p-3"
+                  style="background: rgb(21, 31, 45);">
+                  <span data-template-id="preview-kpi-3-label" class="canva-text text-[10px] text-slate-400"
+                    style="color: rgb(148, 163, 184);">KPI Card</span>
+                  <p data-template-id="preview-kpi-3-value" class="canva-text mt-2 text-sm text-cyan-200"
+                    style="color: rgb(182, 241, 255);">Status</p>
+                </div>
+              </div>
+              <div class="dash-chart mt-4 rounded-lg border border-white/10 h-40 p-4">
+                <span data-template-id="preview-chart-label" class="canva-text mono text-[10px] text-slate-400"
+                  style="color: rgb(148, 163, 184); font-family: &quot;Space Mono&quot;;">Illustrative activity
+                  chart</span>
+                <svg viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M0 80 L43 62 L86 73 L129 38 L172 54 L215 25 L258 44 L300 16" fill="none" stroke="#38d9ff"
+                    stroke-width="3"></path>
+                  <path d="M0 84 L43 75 L86 48 L129 65 L172 35 L215 53 L258 29 L300 40" fill="none" stroke="#a78bfa"
+                    stroke-width="2"></path>
+                </svg>
+              </div>
+              <div class="mt-4 rounded-lg border border-white/10 overflow-hidden text-[10px]">
+                <div class="grid grid-cols-3 bg-white/5 p-2 text-slate-400">
+                  <span data-template-id="table-head-1" class="canva-text"
+                    style="color: rgb(148, 163, 184);">Asset</span><span data-template-id="table-head-2"
+                    class="canva-text" style="color: rgb(148, 163, 184);">State</span><span
+                    data-template-id="table-head-3" class="canva-text" style="color: rgb(148, 163, 184);">View</span>
+                </div>
+                <div class="grid grid-cols-3 p-2 border-t border-white/10 text-slate-300">
+                  <span data-template-id="table-row-1a" class="canva-text" style="color: rgb(203, 213, 225);">Sample
+                    A</span><span data-template-id="table-row-1b" class="canva-text"
+                    style="color: rgb(203, 213, 225);">Review</span><span data-template-id="table-row-1c"
+                    class="canva-text" style="color: rgb(203, 213, 225);">Details</span>
+                </div>
+                <div class="grid grid-cols-3 p-2 border-t border-white/10 text-slate-300">
+                  <span data-template-id="table-row-2a" class="canva-text" style="color: rgb(203, 213, 225);">Sample
+                    B</span><span data-template-id="table-row-2b" class="canva-text"
+                    style="color: rgb(203, 213, 225);">Ready</span><span data-template-id="table-row-2c"
+                    class="canva-text" style="color: rgb(203, 213, 225);">Details</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="mt-5 grid md:grid-cols-2 gap-5">
+          <article data-template-id="project-2" class="canva-card panel card-lift project reveal rounded-xl p-6"
+            style="background: rgb(17, 24, 36);">
+            <p data-template-id="p2-index" class="canva-text mono text-xs text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">02 / BACKEND SYSTEM</p>
+            <h3 data-template-id="p2-title" class="canva-text mt-3 text-xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">JagoGrahak — Online Consumer Complaint Management
+              System</h3>
+            <p data-template-id="p2-stack" class="canva-text text-sm text-violet-200 mt-3"
+              style="color: rgb(221, 214, 254);">Java · Spring MVC · Spring Data JPA · Hibernate · MySQL · JSP · JUnit
+            </p>
+            <p data-template-id="p2-description" class="canva-text muted mt-4 leading-relaxed"
+              style="color: rgb(155, 171, 185);">Consumer complaint registration and reporting system using a structured
+              Controller, Service, DAO, and Entity architecture.</p>
+            <div class="mt-5 flex gap-2">
+              <button data-template-id="p2-details" type="button"
+                class="canva-button toggle-details text-cyan-200 text-sm px-2" style="color: rgb(182, 241, 255);">View
+                details</button>
+            </div>
+            <div class="details">
+              <div>
+                <p data-template-id="p2-more" class="canva-text muted mt-4 pt-4 border-t border-white/10"
+                  style="color: rgb(155, 171, 185);">Includes JPA EntityManager, date-range queries, validation,
+                  duplicate detection, transaction management, exception handling, dependency injection, and
+                  JUnit/Spring testing.</p>
+              </div>
+            </div>
+          </article>
+          <article data-template-id="project-3" class="canva-card panel card-lift project reveal rounded-xl p-6"
+            style="background: rgb(17, 24, 36);">
+            <p data-template-id="p3-index" class="canva-text mono text-xs text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">03 / WEB PLATFORM</p>
+            <h3 data-template-id="p3-title" class="canva-text mt-3 text-xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Guide2HYD</h3>
+            <p data-template-id="p3-stack" class="canva-text text-sm text-violet-200 mt-3"
+              style="color: rgb(221, 214, 254);">HTML · CSS· JavaScript</p>
+            <p data-template-id="p3-description" class="canva-text muted mt-4 leading-relaxed"
+              style="color: rgb(155, 171, 185);">Tourism platform for Hyderabad historical and tourist locations.</p>
+          </article>
+          <article data-template-id="project-4" class="canva-card panel card-lift project reveal rounded-xl p-6"
+            style="background: rgb(17, 24, 36);">
+            <p data-template-id="p4-index" class="canva-text mono text-xs text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">04 / COMPUTER VISION</p>
+            <h3 data-template-id="p4-title" class="canva-text mt-3 text-xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Hand Gesture Recognition</h3>
+            <p data-template-id="p4-stack" class="canva-text text-sm text-violet-200 mt-3"
+              style="color: rgb(221, 214, 254);">Python · OpenCV · MediaPipe · Computer Vision</p>
+            <p data-template-id="p4-description" class="canva-text muted mt-4 leading-relaxed"
+              style="color: rgb(155, 171, 185);">Real-time hand landmark extraction and video-frame processing.</p>
+            <div class="mt-5 flex gap-2">
+              <button data-template-id="p4-details" type="button"
+                class="canva-button toggle-details text-cyan-200 text-sm px-2" style="color: rgb(182, 241, 255);">View
+                details</button>
+            </div>
+            <div class="details">
+              <div>
+                <p data-template-id="p4-more" class="canva-text muted mt-4 pt-4 border-t border-white/10"
+                  style="color: rgb(155, 171, 185);">Built around processing visual input frame by frame and working
+                  with hand landmark data.</p>
+              </div>
+            </div>
+          </article>
+          <article data-template-id="project-5" class="canva-card panel card-lift project reveal rounded-xl p-6"
+            style="background: rgb(17, 24, 36);">
+            <p data-template-id="p5-index" class="canva-text mono text-xs text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">05 / AUTOMATION UTILITIES</p>
+            <h3 data-template-id="p5-title" class="canva-text mt-3 text-xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Web Automation &amp; Data Processing Utilities</h3>
+            <p data-template-id="p5-stack" class="canva-text text-sm text-violet-200 mt-3"
+              style="color: rgb(221, 214, 254);">Python · Selenium · Requests · BeautifulSoup · JSON · PIL · PDF
+              automation</p>
+            <p data-template-id="p5-description" class="canva-text muted mt-4 leading-relaxed"
+              style="color: rgb(155, 171, 185);">Browser automation, JSON product-link processing, web image extraction,
+              temporary file handling, and automated PDF generation.</p>
+            <div class="mt-5 flex gap-2">
+              <button data-template-id="p5-details" type="button"
+                class="canva-button toggle-details text-cyan-200 text-sm px-2" style="color: rgb(182, 241, 255);">View
+                details</button>
+            </div>
+            <div class="details">
+              <div>
+                <p data-template-id="p5-more" class="canva-text muted mt-4 pt-4 border-t border-white/10"
+                  style="color: rgb(155, 171, 185);">A collection of practical scripts for reducing repeatable browser
+                  and file-processing work.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="workflow" class="shell-width py-20 scroll-mt-20">
+        <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-9">
+          <div class="reveal">
+            <p data-template-id="workflow-kicker" class="canva-text section-kicker"
+              style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">04 / AI + PROMPT ENGINEERING</p>
+            <h2 data-template-id="workflow-title" class="canva-text section-title mt-4"
+              style="color: rgb(237, 244, 247); font-weight: 700;">AI as a development collaborator.</h2>
+            <p data-template-id="workflow-copy" class="canva-text muted mt-5 max-w-xl leading-relaxed"
+              style="color: rgb(155, 171, 185); font-size: 17px;">For the Energy Operations Analytics Dashboard,
+              structured prompts helped accelerate component development, code generation, debugging, refactoring, UI
+              implementation, and iterative feature development.</p>
+            <p data-template-id="workflow-disclaimer" class="canva-text mt-4 text-sm text-violet-200"
+              style="color: rgb(221, 214, 254); font-weight: 600;">This is AI-assisted development, not AI model
+              training.</p>
+            <div class="mt-9 flex flex-wrap items-center gap-3">
+              <div class="panel rounded-lg p-3 text-center">
+                <span data-template-id="flow-1-title" class="canva-text mono text-xs text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">Prompt</span>
+                <p data-template-id="flow-1-copy" class="canva-text mt-2 text-xs muted"
+                  style="color: rgb(155, 171, 185);">Frame the task</p>
+              </div><span class="flow-line"></span>
+              <div class="panel rounded-lg p-3 text-center">
+                <span data-template-id="flow-2-title" class="canva-text mono text-xs text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">Generate</span>
+                <p data-template-id="flow-2-copy" class="canva-text mt-2 text-xs muted"
+                  style="color: rgb(155, 171, 185);">Draft ideas</p>
+              </div><span class="flow-line"></span>
+              <div class="panel rounded-lg p-3 text-center">
+                <span data-template-id="flow-3-title" class="canva-text mono text-xs text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">Test</span>
+                <p data-template-id="flow-3-copy" class="canva-text mt-2 text-xs muted"
+                  style="color: rgb(155, 171, 185);">Check behavior</p>
+              </div><span class="flow-line"></span>
+              <div class="panel rounded-lg p-3 text-center">
+                <span data-template-id="flow-4-title" class="canva-text mono text-xs text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">Refine</span>
+                <p data-template-id="flow-4-copy" class="canva-text mt-2 text-xs muted"
+                  style="color: rgb(155, 171, 185);">Improve code</p>
+              </div><span class="flow-line"></span>
+              <div class="panel rounded-lg p-3 text-center">
+                <span data-template-id="flow-5-title" class="canva-text mono text-xs text-cyan-200"
+                  style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">Ship</span>
+                <p data-template-id="flow-5-copy" class="canva-text mt-2 text-xs muted"
+                  style="color: rgb(155, 171, 185);">Deliver usefully</p>
+              </div>
+            </div>
+          </div>
+          <aside data-template-id="prompt-card" class="canva-card terminal reveal rounded-2xl p-6 md:p-7"
+            style="background: rgb(10, 16, 24);">
+            <p data-template-id="prompt-label" class="canva-text mono text-xs text-slate-400"
+              style="color: rgb(148, 163, 184); font-family: &quot;Space Mono&quot;;">// example structured prompt</p>
+            <p data-template-id="prompt-text" class="canva-text mono text-cyan-100 mt-5 leading-7"
+              style="color: rgb(217, 249, 255); font-family: &quot;Space Mono&quot;;">Build a reusable data table with
+              sorting, filtering, pagination and column visibility.</p>
+            <div class="mt-7 pt-5 border-t border-white/10">
+              <span data-template-id="prompt-footer" class="canva-text mono text-xs text-violet-200"
+                style="color: rgb(221, 214, 254); font-family: &quot;Space Mono&quot;;">→ iterate with review and
+                testing</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section id="experience" class="shell-width py-20 scroll-mt-20">
+        <p data-template-id="experience-kicker" class="canva-text section-kicker reveal"
+          style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">05 / EXPERIENCE</p>
+        <h2 data-template-id="experience-title" class="canva-text section-title mt-4 reveal"
+          style="color: rgb(237, 244, 247); font-weight: 700;">A focused foundation in application development.</h2>
+        <div class="experience-grid grid grid-cols-[180px_1fr] gap-8 mt-10 reveal">
+          <div>
+            <span data-template-id="experience-date" class="canva-text mono text-sm text-cyan-200"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">OCT 2024 — OCT 2025</span>
+          </div>
+          <article data-template-id="experience-card" class="canva-card panel rounded-xl p-6 relative"
+            style="background: rgb(17, 24, 36);">
+            <span class="absolute -left-[37px] top-7 w-3 h-3 rounded-full bg-cyan-300 shadow-[0_0_18px_#38d9ff]"></span>
+            <p data-template-id="experience-company" class="canva-text mono text-xs text-violet-200"
+              style="color: rgb(221, 214, 254); font-family: &quot;Space Mono&quot;;">ACCENTURE</p>
+            <h3 data-template-id="experience-role" class="canva-text mt-3 text-2xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Package App Development Associate</h3>
+            <p data-template-id="experience-copy" class="canva-text muted mt-4 leading-relaxed"
+              style="color: rgb(155, 171, 185);">Contributed to software development, application feature work,
+              debugging, testing, and collaboration.</p>
+          </article>
+        </div>
+      </section>
+      <section class="shell-width py-20">
+        <div class="grid lg:grid-cols-2 gap-6">
+          <article data-template-id="education-card" class="canva-card panel reveal rounded-2xl p-7"
+            style="background: rgb(17, 24, 36);">
+            <p data-template-id="education-kicker" class="canva-text section-kicker"
+              style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">06 / EDUCATION</p>
+            <h2 data-template-id="education-title" class="canva-text mt-4 text-2xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">B.Tech CSE</h2>
+            <p data-template-id="education-school" class="canva-text muted mt-3" style="color: rgb(155, 171, 185);">
+              Sreenidhi Institute of Science and Technology</p>
+            <p data-template-id="education-grade" class="canva-text mt-4 text-cyan-200 mono text-sm"
+              style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">CGPA 8.01/10.0</p>
+          </article>
+          <article data-template-id="cert-card" class="canva-card panel reveal rounded-2xl p-7"
+            style="background: rgb(17, 24, 36);">
+            <p data-template-id="cert-kicker" class="canva-text section-kicker"
+              style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">07 / CERTIFICATIONS</p>
+            <h2 data-template-id="cert-title" class="canva-text mt-4 text-2xl font-bold"
+              style="color: rgb(237, 244, 247); font-weight: 700;">Learning, applied.</h2>
+            <ul class="mt-5 space-y-3 muted">
+              <li data-template-id="cert-1" class="canva-text" style="color: rgb(155, 171, 185);">Oracle Cloud
+                Infrastructure Foundations Associate 2025</li>
+              <li data-template-id="cert-2" class="canva-text" style="color: rgb(155, 171, 185);">Java Full Stack
+                Development</li>
+              <li data-template-id="cert-3" class="canva-text" style="color: rgb(155, 171, 185);">NPTEL Problem Solving
+                Using C</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="shell-width py-20 scroll-mt-20">
+        <div data-template-id="contact-card"
+          class="canva-card panel reveal rounded-2xl p-8 md:p-12 overflow-hidden relative"
+          style="background: rgb(17, 24, 36);">
+          <div class="absolute right-0 top-0 w-64 h-64 bg-cyan-300/10 blur-3xl"></div>
+          <p data-template-id="contact-kicker" class="canva-text section-kicker relative"
+            style="color: rgb(56, 217, 255); font-family: &quot;Space Mono&quot;;">08 / CONTACT</p>
+          <h2 data-template-id="contact-title" class="canva-text section-title relative mt-4 max-w-2xl"
+            style="color: rgb(237, 244, 247); font-weight: 700;">Have a practical product to build?</h2>
+          <p data-template-id="contact-copy" class="canva-text muted relative mt-5 max-w-xl text-lg"
+            style="color: rgb(155, 171, 185); font-size: 18px;">Open to software development opportunities and
+            thoughtful collaboration. The details below are editable placeholders.</p>
+          <div class="relative mt-8 grid md:grid-cols-3 gap-3">
+            <div class="rounded-lg border border-white/10 p-4">
+              <p data-template-id="contact-email-label" class="canva-text mono text-xs text-cyan-200"
+                style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">EMAIL</p>
+              <p data-template-id="contact-email-value" class="canva-text muted mt-2 text-sm"
+                style="color: rgb(155, 171, 185);">vkkumar2002@gmail.com</p>
+            </div>
+            <div class="rounded-lg border border-white/10 p-4">
+              <p data-template-id="contact-github-label" class="canva-text mono text-xs text-cyan-200"
+                style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">GITHUB</p>
+              <p data-template-id="contact-github-value" class="canva-text muted mt-2 text-sm"
+                style="color: rgb(155, 171, 185);">github.com/VKKumar2002</p>
+            </div>
+            <div class="rounded-lg border border-white/10 p-4">
+              <p data-template-id="contact-phone-label" class="canva-text mono text-xs text-cyan-200"
+                style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;;">PHONE / LOCATION</p>
+              <p data-template-id="contact-phone-value" class="canva-text muted mt-2 text-sm"
+                style="color: rgb(155, 171, 185);">+91 9494648609 · Hyderabad</p>
+            </div>
+          </div><button id="contact-button" data-template-id="contact-button" type="button"
+            class="canva-button accent-button focus-ring relative mt-8 rounded-lg px-5 py-3 font-semibold"
+            style="background: rgb(56, 217, 255); color: rgb(6, 16, 22); font-weight: 700;">Start a
+            conversation</button>
+          <p id="contact-message" class="relative mt-3 text-sm text-cyan-200" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="shell-width py-9 border-t border-white/10 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
+      <span data-template-id="footer-mark" class="canva-text mono text-xs text-cyan-200"
+        style="color: rgb(182, 241, 255); font-family: &quot;Space Mono&quot;; font-weight: 700;">VK / SOFTWARE
+        DEVELOPER</span>
+      <p data-template-id="footer-copy" class="canva-text muted text-sm" style="color: rgb(155, 171, 185);">Built with
+        curiosity, code and AI-assisted development.</p><a href="#top" data-template-id="footer-top"
+        class="canva-link text-sm text-cyan-200 no-underline focus-ring"
+        style="color: rgb(182, 241, 255); font-weight: 600;">Back to top ↑</a>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+
+      const menu = document.getElementById("mobile-nav");
+      const menuToggle = document.getElementById("menu-toggle");
+      menuToggle.addEventListener("click", () => {
+        const open = menu.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(open));
+      });
+      menu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+        menu.classList.remove("open"); menuToggle.setAttribute("aria-expanded", "false");
+      }));
+
+      // document.getElementById("theme-toggle").addEventListener("click", () => {
+      //   document.body.classList.toggle("light");
+      // });
+
+      document.querySelectorAll(".toggle-details").forEach(button => {
+        button.addEventListener("click", () => {
+          const project = button.closest(".project");
+          project.classList.toggle("open");
+          button.setAttribute("aria-expanded", String(project.classList.contains("open")));
+        });
+      });
+
+      const showPlaceholder = (target, message) => {
+        target.textContent = message;
+        window.setTimeout(() => { target.textContent = ""; }, 3800);
+      };
+      document.getElementById("github-placeholder").addEventListener("click", () => showPlaceholder(document.getElementById("placeholder-message"), "GitHub link placeholder — update this editable button with your profile URL."));
+      document.querySelectorAll("[data-template-id$='-github']").forEach(button => {
+        button.addEventListener("click", () => showPlaceholder(document.getElementById("placeholder-message"), "https://github.com/VKKumar2002"));
+      });
+      document.getElementById("contact-button").addEventListener("click", () => showPlaceholder(document.getElementById("contact-message"), "Contact details are editable placeholders — update them in Canva to start a conversation."));
+
+      const sections = [...document.querySelectorAll("main section[id]")];
+      const navLinks = [...document.querySelectorAll(".desktop-nav a")];
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(link => link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id));
+          }
+        });
+      }, { rootMargin: "-42% 0px -52% 0px" });
+      sections.forEach(section => observer.observe(section));
+
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add("visible"); revealObserver.unobserve(entry.target); } });
+      }, { threshold: .12 });
+      document.querySelectorAll(".reveal").forEach(element => revealObserver.observe(element));
+    });
+  </script>
+
+</body>
+
+</html>
